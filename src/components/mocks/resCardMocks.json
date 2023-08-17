@@ -1,0 +1,82 @@
+{
+    "id": "506430",
+    "name": "Bikaner Elite ( Saguna More )",
+    "cloudinaryImageId": "dctjrj2xylwu772p4pzd",
+    "locality": "Saguna More",
+    "areaName": "Rukanpura",
+    "costForTwo": "₹300 for two",
+    "cuisines": [
+        "Bakery",
+        "Snacks",
+        "South Indian",
+        "Sweets"
+    ],
+    "avgRating": 4.1,
+    "veg": true,
+    "feeDetails": {
+        "restaurantId": "506430",
+        "fees": [
+            {
+                "name": "BASE_DISTANCE",
+                "fee": 2500
+            },
+            {
+                "name": "BASE_TIME"
+            },
+            {
+                "name": "ANCILLARY_SURGE_FEE"
+            }
+        ],
+        "totalFee": 2500
+    },
+    "parentId": "45850",
+    "avgRatingString": "4.1",
+    "totalRatingsString": "1K+",
+    "sla": {
+        "deliveryTime": 23,
+        "lastMileTravel": 3,
+        "serviceability": "SERVICEABLE",
+        "slaString": "23 mins",
+        "lastMileTravelString": "3.0 km",
+        "iconType": "ICON_TYPE_EMPTY"
+    },
+    "availability": {
+        "nextCloseTime": "2023-08-11 21:30:00",
+        "opened": true
+    },
+    "badges": {},
+    "isOpen": true,
+    "type": "F",
+    "badgesV2": {
+        "entityBadges": {
+            "imageBased": {},
+            "textBased": {},
+            "textExtendedBadges": {}
+        }
+    },
+    "aggregatedDiscountInfoV3": {
+        "discountCalloutInfo": {
+            "message": "Free Delivery",
+            "logoCtx": {
+                "logo": "v1655895371/free_delivery_logo_hqipbo.png"
+            }
+        }
+    },
+    "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+    },
+    "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+            "lottie": {},
+            "video": {}
+        }
+    },
+    "reviewsSummary": {},
+    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    "restaurantOfferPresentationInfo": {}
+}

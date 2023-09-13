@@ -12,10 +12,14 @@ const useRestaurantMenu = (resId) => {
 
   //fetchMenu function logic
   const fetchData = async () => {
-    const data = await fetch(MENU_API_URL + resId);
-    const json = await data.json();
-    console.log(json);
-    setResInfo(json.data);
+    try {
+      const data = await fetch(MENU_API_URL + resId);
+      const json = await data.json();
+      console.log(json);
+      setResInfo(json.data);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return resInfo;

@@ -25,20 +25,26 @@ const Body = () => {
 
   const fetchData = async () => {
     //Make function async.
-    const data = await fetch(
-      // And data await
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.6368743&lng=85.0547624&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-    );
+    try {
+      const data = await fetch(
+        // And data await
+        "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.6368743&lng=85.0547624&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      );
 
-    const json = await data.json();
+      const json = await data.json();
 
-    // Optional Chaining
-    setListOfRestaurant(
-      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    );
-    setFilteredRestaurant(
-      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    );
+      // Optional Chaining
+      setListOfRestaurant(
+        json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+          ?.restaurants
+      );
+      setFilteredRestaurant(
+        json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+          ?.restaurants
+      );
+    } catch (err) {
+      console.log(err);
+    }
     //  console.log(json);
   };
 

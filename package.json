@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Ayus889.github.io/Namaste-React.git",
+  "homepage": "https://Ayus889.github.io/Namaste-React",
   "name": "namaste_react",
   "version": "1.0.0",
   "description": "\"This is namaste React by Akshay Saini\"",
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "(https://github.com/Ayus889/Namaste-React)"
   },
-  "author": "Akshay saini",
+  "author": "Ayush Kumar",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.22.10",

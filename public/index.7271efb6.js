@@ -27484,7 +27484,7 @@ parcelHelpers.export(exports, "LOGO_URL", ()=>LOGO_URL);
 parcelHelpers.export(exports, "MENU_API_URL", ()=>MENU_API_URL);
 const CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
 const LOGO_URL = "https://api.logo.com/api/v2/images?logo=logo_6e448f94-590d-4acb-a41c-16169c35fffa&format=webp&margins=0&quality=60&width=500&background=transparent&u=1693480798";
-const MENU_API_URL = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId=";
+const MENU_API_URL = "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId=";
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
@@ -36170,10 +36170,14 @@ const useRestaurantMenu = (resId)=>{
     }, []);
     //fetchMenu function logic
     const fetchData = async ()=>{
-        const data = await fetch((0, _constant.MENU_API_URL) + resId);
-        const json = await data.json();
-        console.log(json);
-        setResInfo(json.data);
+        try {
+            const data = await fetch((0, _constant.MENU_API_URL) + resId);
+            const json = await data.json();
+            console.log(json);
+            setResInfo(json.data);
+        } catch (err) {
+            console.log(err);
+        }
     };
     return resInfo;
 };
